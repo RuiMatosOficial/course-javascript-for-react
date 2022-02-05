@@ -1,16 +1,15 @@
 import "./src/styles/settings/colors.css";
 import "./src/styles/generic/reset.css";
 import "./src/styles/elements/base.css";
-
-import CardGame from "./src/components/CardGame";
+import BoardGame from "./src/objects/BoardGame";
 
 //  referencia da tela $nome_variável boas práticas
 const $root = document.querySelector("#root");
-const $htmlCardGame = CardGame();
+const $htmlBoardGame = BoardGame(4);
 
-console.log($htmlCardGame);
+// console.log($htmlCardGame);
 
 // $root.innerHTML = $htmlCardGame; // Não recomendado pela causa da seguranca
 
-$root.insertAdjacentHTML('afterbegin', $htmlCardGame);
+$root.insertAdjacentHTML('beforeend', $htmlBoardGame);
 
