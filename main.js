@@ -3,13 +3,10 @@ import "./src/styles/generic/reset.css";
 import "./src/styles/elements/base.css";
 import BoardGame from "./src/objects/BoardGame";
 
-//  referencia da tela $nome_variável boas práticas
+//  $nome_variável boas práticas colocar cifra antes variável tela
 const $root = document.querySelector("#root");
-const $htmlBoardGame = BoardGame(4);
+const $htmlBoardGame = BoardGame(6);
 
-// console.log($htmlCardGame);
-
-// $root.innerHTML = $htmlCardGame; // Não recomendado pela causa da seguranca
 
 $root.insertAdjacentHTML('beforeend', $htmlBoardGame);
 
