@@ -1,15 +1,16 @@
 import "./src/styles/settings/colors.css";
 import "./src/styles/generic/reset.css";
 import "./src/styles/elements/base.css";
-import BoardGame from "./src/objects/BoardGame";
-import ScoreBoard from './src/objects/ScoreBoard/index';
 
-//  $nome_variável boas práticas colocar cifra antes variável tela
-const $root = document.querySelector("#root");
+import ScoreBoard from './src/objects/ScoreBoard/index';
+import BoardGame from './src/objects/BoardGame/index';
+
+const $root = document.querySelector("#root"); //  $nome_variável boas práticas colocar cifra antes variável tela
+
 $root.insertAdjacentHTML(
     'beforeend', 
     `   
         ${ScoreBoard()}
-        ${BoardGame(6)}
+        ${BoardGame(2)}
     `
 );
