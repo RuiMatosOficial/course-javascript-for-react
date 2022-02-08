@@ -1,12 +1,17 @@
-import CardGame from '../CardGame/index';
+import CardGame from '../CardGame';
+import './style.css';
 
 function CardFrontBack() {
    return /*html*/`
         <article class="card-front-back">
-            ${CardGame()}
-            ${CardGame('javascript', 'Logo Javascript')}
+            <div class="card -front">
+                ${CardGame()}
+            </div>    
+            <div class="card -back">  
+                ${CardGame('javascript', 'Logo Javascript')}
+            </div>       
         </article>
-    `
+    `;
 }
 
 export default CardFrontBack;
